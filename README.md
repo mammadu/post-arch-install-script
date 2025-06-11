@@ -1,6 +1,6 @@
 # Arch Linux Post-Installation Script
 
-This script automates the post-installation setup of a fresh Arch Linux installation. It provides an interactive menu to choose which components to install, including command-line tools, the KDE Plasma desktop environment, and popular GUI applications.
+This script automates the post-installation setup of a fresh Arch Linux installation. It provides an interactive menu to choose which components to install, including command-line tools and popular GUI applications.
 
 ## Prerequisites
 
@@ -27,32 +27,29 @@ The script provides an interactive menu with the following options:
 1. **Command Line Tools**
    - git
    - yay (AUR helper)
-   - rclone
-   - oh-my-zsh
    - fzf
+   - zsh (set as default shell)
+   - oh-my-zsh
    - neovim
-   - asdf
+   - rclone
    - tldr
    - man-db
    - man-pages
+   - asdf
 
-2. **Desktop Environment**
-   - KDE Plasma
-   - Dolphin (file manager)
-
-3. **GUI Applications**
+2. **GUI Applications**
    - Google Chrome
-   - Visual Studio Code
-   - Obsidian
+   - Visual Studio Code (includes `code` command)
    - Spotify
-   - qBittorrent
    - Vesktop (Discord client)
    - Stremio
+   - Obsidian
+   - qBittorrent
 
-4. **Install All Components**
+3. **Install All Components**
    - Installs everything listed above
 
-5. **Exit**
+4. **Exit**
    - Exits the script
 
 ## Notes
@@ -75,4 +72,4 @@ If you encounter any issues:
    ```bash
    sudo pacman -S package_name  # for official packages
    yay -S package_name         # for AUR packages
-   ``` 
+   ```
