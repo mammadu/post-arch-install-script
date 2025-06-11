@@ -28,33 +28,29 @@ Create a post installation program/script to setup a fresh arch linux installati
     - Set up sudo access
     - Exit for security (requiring new login)
 
-### Installs the following programs
+### Installs the following programs (only if not already installed)
 
 #### Command Line Tools
 
 - git
 - yay
-- rclone
-- ohmyzsh
-- code command for vscode
 - fzf
+- install and set zsh as default shell
+- ohmyzsh
 - nvim
-- asdf
+- rclone
 - tldr
 - man-db
 - man-pages
-
-#### Desktop Environment
-
-- kde plasma
-- dolphin
+- asdf
 
 #### GUI Tools
 
 - google-chrome
 - vscode
-- obsidian
+- code command for vscode
 - spotify
-- qbittorrent
 - vesktop
-- stremio 
+- stremio
+- obsidian
+- qbittorrent
