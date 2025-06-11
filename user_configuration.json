@@ -1,0 +1,46 @@
+{
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Grub",
+    "custom_commands": [],
+    "hostname": "archlinux",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "ntp": true,
+    "packages": [
+        "fzf",
+        "git",
+        "man-db",
+        "man-pages",
+        "obsidian",
+        "rclone",
+        "tldr",
+        "qbittorrent"
+    ],
+    "parallel_downloads": 0,
+    "profile_config": {
+        "gfx_driver": "Nvidia (proprietary)",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {}
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "services": [],
+    "swap": true,
+    "timezone": "US/Pacific",
+    "version": null
+}
