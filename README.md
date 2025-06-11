@@ -96,10 +96,10 @@ Before running this post-installation script, you should complete the initial Ar
 
 3. **Partition Your Disks**
    - It is recommended to partition your disks as follows:
-     - `/boot` (EFI or BIOS boot partition)
+     - `/boot` (EFI or BIOS boot partition, 1GiB is usually sufficient)
      - `/` (root partition)
-     - `swap` (optional, for swap space)
-     - `/home` (optional, for user data)
+     - `swap` (for swap space, typically equal to your RAM size, but can vary based on your needs)
+     - `/home` (optional, for user data, you can split this in half with the root partition if desired)
    - Make sure to format and mount these partitions appropriately during the installation.
 
 4. **Create a User Account**
