@@ -10,12 +10,17 @@ This script automates the post-installation setup of a fresh Arch Linux installa
 
 ## Installation
 
-1. Make the script executable:
+1. Download the script:
+   ```bash
+   wget https://raw.githubusercontent.com/mammadu/post-arch-install-script/main/post-install.sh
+   ```
+
+2. Make the script executable:
    ```bash
    chmod +x post-install.sh
    ```
 
-2. Run the script:
+3. Run the script:
    ```bash
    ./post-install.sh
    ```
