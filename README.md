@@ -4,7 +4,7 @@ This script automates the post-installation setup of a fresh Arch Linux installa
 
 ## Prerequisites
 
-- A fresh Arch Linux installation
+- A fresh Arch Linux installation (see [Archinstall Steps](#archinstall-steps) below)
 - Internet connection
 - Sudo privileges
 
@@ -73,3 +73,39 @@ If you encounter any issues:
    sudo pacman -S package_name  # for official packages
    yay -S package_name         # for AUR packages
    ```
+
+## Archinstall Steps
+
+Before running this post-installation script, you should complete the initial Arch Linux installation using the official `archinstall` guided installer. Here are the key steps to follow:
+
+1. **Use a Predefined Configuration**
+   - You can use the provided `user_configuration.json` from this repository to automate and standardize your installation. Download it with:
+
+     ```bash
+     wget https://raw.githubusercontent.com/mammadu/post-arch-install-script/main/user_configuration.json
+     ```
+
+   - Then run archinstall with the configuration:
+
+     ```bash
+     archinstall --config user_configuration.json
+     ```
+
+2. **Select Your Desktop Environment**
+   - During the `archinstall` process, choose your preferred desktop environment (e.g., KDE Plasma) when prompted (if not already set in the configuration).
+
+3. **Partition Your Disks**
+   - It is recommended to partition your disks as follows:
+     - `/boot` (EFI or BIOS boot partition)
+     - `/` (root partition)
+     - `swap` (optional, for swap space)
+     - `/home` (optional, for user data)
+   - Make sure to format and mount these partitions appropriately during the installation.
+
+4. **Create a User Account**
+   - During the guided installation, ensure you create a regular user account (not just root). This is required for the post-installation script to work properly and for secure system usage.
+
+5. **Complete the Guided Installation**
+   - Follow the remaining prompts in `archinstall` to set your locale, timezone, and other system settings if not already set by the configuration.
+
+Once the base system is installed, a user account is created, and you have rebooted into your new Arch Linux environment, you can proceed with the post-installation script as described above.
